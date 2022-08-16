@@ -13,3 +13,30 @@ const lista2 = [...lista1, 'maça']
 
 console.log(lista1);
 console.log(lista2);
+
+const jose = {
+    name: 'jose',
+    idade: 18,
+    enderecos: [
+        {
+            rua: 'AV. Brasil',
+            numero: 10
+        }
+    ]
+
+}
+
+const joao = { 
+    ...jose,
+    name: 'joao',
+    enderecos: [...jose.enderecos,{
+        rua: 'AV. Fenix',
+        numero: 10,
+    },]
+}
+
+
+console.log(jose);
+console.log(joao);
+
+
